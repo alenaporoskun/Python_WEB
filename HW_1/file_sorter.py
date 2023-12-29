@@ -38,6 +38,16 @@ NAME_FILE_EXTENSIONS = 'extensions.txt'
 
 NAME_FILE_FILES = 'files.txt'
 
+class SortFiles:
+    @staticmethod
+    def handle() -> None:
+        # за замовчування папка - example ,
+        # щоб не сортувавало поточну папку при пустому параметрі
+        folder = ''
+        while folder != 'c':
+            folder = input('Enter the directory to sort (c - cancel): ').strip()
+            if folder and folder != 'c':
+                sorter(folder)
 
 def normalize_string(string: str) -> str:
     """
