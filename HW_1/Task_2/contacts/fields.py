@@ -157,13 +157,6 @@ class Record:
             if phone.value.lower() == number:
                 return phone
         return None
-
-    def set_birthday2(self, birthday: str) -> None:
-        # Перевірка коректності формату дати та збереження в атрибут birthday
-        try:
-            self.birthday = datetime.strptime(birthday, "%Y-%m-%d").date()
-        except ValueError:
-            raise ValueError("Invalid birthday date format. Use YYYY-MM-DD.")
         
     def set_birthday(self, birthday: str) -> None:
         # Передача дати народження об'єкту Birthday
@@ -172,7 +165,6 @@ class Record:
             self.birthday = birthday_obj
         except ValueError as e:
             raise ValueError(f"Invalid birthday date format. {str(e)}")
-
 
     def set_address(self, address: str) -> None:
         self.address = Address(address)
