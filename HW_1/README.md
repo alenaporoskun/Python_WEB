@@ -13,28 +13,28 @@
 * Для цього було створено структуру файлів та папок:
 
 ├── HW_1 
-│    ├── contacts
-│    │   ├── __init__.py
-│    │   ├── book_classes.py
-│    │   ├── contact_classes.py
-│    │   ├── fields.py
-│    │   ├── note_classes.py
-│    ├── data
-│    │   ├── address_book.pkl
-│    │   ├──notes.pkl
-│    ├── helpers
-│    │   ├── __init__.py
-│    │   ├── file_sorter.py
-│    │   ├── help.py
-│    │   ├── interface.py
-│    ├── output
-│    │   ├── __init__.py
-│    │   ├── print_table.py  
-│    │
-│    └── __init__.py
-│    └── main.py
-│    └── README.md  
-│    └── README_ua.md  
+│    ├── contacts  
+│    │   ├── __init__.py  
+│    │   ├── book_classes.py  
+│    │   ├── contact_classes.py  
+│    │   ├── fields.py  
+│    │   ├── note_classes.py  
+│    ├── data  
+│    │   ├── address_book.pkl  
+│    │   ├──notes.pkl  
+│    ├── helpers  
+│    │   ├── __init__.py  
+│    │   ├── file_sorter.py  
+│    │   ├── help.py  
+│    │   ├── interface.py  
+│    ├── output  
+│    │   ├── __init__.py  
+│    │   ├── print_table.py    
+│    │  
+│    └── __init__.py  
+│    └── main.py  
+│    └── README.md    
+│    └── README_ua.md    
 
 
 Був розроблений персональний помічник для містера Коргі. Містер Коргі - помічник Санта Клауса.   
