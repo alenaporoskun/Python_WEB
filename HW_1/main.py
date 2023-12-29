@@ -4,12 +4,13 @@ from os import makedirs
 from prompt_toolkit import prompt
 from prompt_toolkit.completion import WordCompleter
 
-from help import Help
-from book_classses import PrintTable, LoadBook, SaveBook
-from contact_classes import AddContact, EditContact, DeleteContact
-from contact_classes import DeletePhone, UpcomingBirthdays
-from note_classes import AddNote, ShowNotes, EditNote, DeleteNote
-from file_sorter import SortFiles
+from helpers.help import Help
+from contacts.book_classses import PrintTable, LoadBook, SaveBook
+from contacts.contact_classes import AddContact, EditContact, DeleteContact
+from contacts.contact_classes import DeletePhone, UpcomingBirthdays
+from contacts.note_classes import AddNote, ShowNotes, SearchNotes
+from contacts.note_classes import EditNote, DeleteNote
+from helpers.file_sorter import SortFiles
 
 # Отримуємо повний шлях до поточного робочого каталогу,
 # де розташований цей скрипт
@@ -51,14 +52,15 @@ def main() -> None:
         'delete-phone':       DeletePhone,
         'upcoming-birthdays': UpcomingBirthdays,
         'add-note':           AddNote,
+        'show-notes':         ShowNotes,
+        'search-notes':       SearchNotes, 
         'edit-note':          EditNote,
         'delete-note':        DeleteNote
     }
 
     choice2 = {
-        'help':           lambda: Help().handle(),
-        'show-contacts':  lambda: PrintTable.handle(book, "Book of gift recipients"),
-        'show-notes':     lambda: ShowNotes.handle(book, FILENAME_NOTES),
+        'help':           lambda: Help().handle_console(),
+        'show-contacts':  lambda: PrintTable.handle_console(book, "Book of gift recipients"),
         'search-contact': lambda: book.search_contact(),
         'sort-files':     lambda: SortFiles.handle()
     }
