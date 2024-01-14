@@ -8,8 +8,8 @@
 
 * Для цього було створено структуру файлів та папок:
 
-├── console_assistant
-|
+├── console_assistant  
+|  
 │    ├── contacts  
 │    │   ├── __init__.py  
 │    │   ├── book_classes.py  
@@ -31,32 +31,33 @@
 │    └── __init__.py  
 │    └── main.py   
 │    └── requirements.txt  
-| 
-├── Dockerfile
-├── README.md 
+|   
+├── Dockerfile  
+├── README.md   
 
 ### Dockerfile
 
 '''
-# Використовуємо базовий образ Python  
+Використовуємо базовий образ Python  
 FROM python:3.10  
   
-# Переміщаємося до каталогу з проектом  
+Переміщаємося до каталогу з проектом  
 WORKDIR /app  
 
-# Копіюємо файли проекту в контейнер  
+Копіюємо файли проекту в контейнер  
 COPY . /app  
 
-# Встановлюємо залежності  
+Встановлюємо залежності  
 RUN pip install -r /app/console_assistant/requirements.txt  
 
-# Вказуємо команду, яка виконається при запуску контейнера
+Вказуємо команду, яка виконається при запуску контейнера
 CMD ["python", "/app/console_assistant/main.py"]
 '''
 
 ### команди для запуску додатка
   
-Для того щоб побудувати docker container використовуйте команду   
+Для того щоб побудувати docker container використовуйте команду 
+  
 ```
 docker build -t personal_assistant_app .
 ```
