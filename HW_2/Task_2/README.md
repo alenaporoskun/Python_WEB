@@ -49,8 +49,8 @@ COPY . /app
 #Встановлюємо залежності  
 RUN pip install -r /app/console_assistant/requirements.txt  
 
-#Вказуємо команду, яка виконається при запуску контейнера
-CMD ["python", "/app/console_assistant/main.py"]
+#Вказуємо команду, яка виконається при запуску контейнера  
+CMD ["python", "/app/console_assistant/main.py"]  
 '''
 
 ### Команди для запуску додатка
