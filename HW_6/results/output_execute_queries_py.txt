@@ -1,0 +1,65 @@
+PS C:\Users\Admin\Downloads\courses\GoIT\Python_for_Data_Science\Python_WEB\Projects\HW_6> & C:/Users/Admin/AppData/Local/Programs/Python/Python310/python.exe c:/Users/Admin/Downloads/courses/GoIT/Python_for_Data_Science/Python_WEB/Projects/HW_6/python/execute_queries.py
+Виконання запиту з файлу sql\query_1.sql:
+('Tracy Duncan', 85.125)
+('Jennifer Briggs', 85.0)
+('Michelle Smith', 84.875)
+('Amber Collins', 84.125)
+('Tammy Ibarra', 83.25)
+
+Виконання запиту з файлу sql\query_2.sql:
+(7, 100.0)
+
+Виконання запиту з файлу sql\query_3.sql:
+('Group A', 79.28571428571429)
+('Group B', 79.61538461538461)
+('Group C', 84.0)
+
+Виконання запиту з файлу sql\query_4.sql:
+(79.275,)
+
+Виконання запиту з файлу sql\query_5.sql:
+('not',)
+('run',)
+
+Виконання запиту з файлу sql\query_6.sql:
+('Wanda Jenkins',)
+('Sara Ortiz',)
+('Erica Young',)
+('Tracy Duncan',)
+('Amy Spencer',)
+('Steven Meyers',)
+('Sherri Williams',)
+
+Виконання запиту з файлу sql\query_7.sql:
+(85,)
+(96,)
+(66,)
+(81,)
+(82,)
+(85,)
+(60,)
+
+Виконання запиту з файлу sql\query_8.sql:
+(76.15,)
+
+Виконання запиту з файлу sql\query_9.sql:
+('not',)
+('run',)
+('lawyer',)
+('stop',)
+('campaign',)
+('public',)
+('young',)
+('once',)
+
+Виконання запиту з файлу sql\query_10.sql:
+('not',)
+('run',)
+
+Виконання запиту з файлу sql\query_11.sql:
+(68.0,)
+
+Виконання запиту з файлу sql\query_12.sql:
+('Tammy Ibarra', 89)
+
+Запити виконано.
