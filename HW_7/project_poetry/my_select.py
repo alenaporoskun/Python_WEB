@@ -4,7 +4,7 @@ from models import Student, Group, Subject, Teacher, Grade
 
 def select_1():
     # Знайти 5 студентів із найвищим середнім балом по всіх предметах
-    top_students = session.query(Student).\
+    top_students = session.query(Student.name, func.avg(Grade.value).label('average_grade')).\
         join(Grade, Student.id == Grade.student_id).\
         group_by(Student.id).\
         order_by(func.avg(Grade.value).desc()).\
@@ -13,14 +13,14 @@ def select_1():
 
 def select_2(subject_name):
     # Знайти студента з найвищим середнім балом з певного предмета
-    top_student = session.query(Student).\
+    top_student_info = session.query(Student.name, func.avg(Grade.value).label("average_grade")).\
         join(Grade, Student.id == Grade.student_id).\
         join(Subject, Grade.subject_id == Subject.id).\
         filter(Subject.name == subject_name).\
         group_by(Student.id).\
         order_by(func.avg(Grade.value).desc()).\
         first()
-    return top_student
+    return top_student_info
 
 def select_3(subject_name):
     # Знайти середній бал у групах з певного предмету
@@ -49,7 +49,9 @@ def select_6(group_name):
     students_in_group = session.query(Student).\
         join(Group, Student.group_id == Group.id).\
         filter(Group.name == group_name).all()
-    return students_in_group
+    
+    # Повернути список кортежів з ім'ям і ідентифікатором кожного студента
+    return [(student.name, student.id) for student in students_in_group]
 
 def select_7(group_name, subject_name):
     # Знайти оцінки студентів у окремій групі з певного предмету
@@ -77,17 +79,6 @@ def select_9(student_name):
         distinct().all()
     return courses_attended
 
-def select_100(student_name, teacher_name):
-    # Знайти список унікальних курсів, які певний студент відвідує, читані певним викладачем
-    courses_taught_to_student = session.query(Subject.name).\
-        join(Teacher, Subject.teacher_id == Teacher.id).\
-        join(Grade, Subject.id == Grade.subject_id).\
-        join(Student, Grade.student_id == Student.id).\
-        filter(Student.name == student_name, Teacher.name == teacher_name).\
-        distinct().all()
-    return courses_taught_to_student
-
-
 def select_10(student_name, subject_name):
     # Знайти викладача, який веде певний предмет
     teacher = session.query(Teacher).\
@@ -106,7 +97,6 @@ def select_10(student_name, subject_name):
     else:
         print(f"Викладач для предмета {subject_name} не знайдено.")
         return []
-
 
 def select_additional_1(student_name, teacher_name):
     # Знайти всі предмети, які відвідує певний студент
@@ -132,7 +122,6 @@ def select_additional_1(student_name, teacher_name):
         print(f"\nСтудент {student_name} не відвідує жодного предмету.")
         return None
     
-
 def select_additional_2(group_name, subject_name):
     # Знайти останні оцінки студентів у певній групі з певного предмета
     last_grades = session.query(Student.name, Grade.value).\
