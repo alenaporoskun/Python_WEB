@@ -14,12 +14,10 @@ ID студента: 27, Ім'я: Amy Campbell
 
 Загальний середній бал: 80.39072398190045
 
-Курси, які веде Kari Christensen:
-('Physics',)
-('Biology',)
-('History',)
-('Literature',)
-('Geography',)
+Курси, які веде Courtney Edwards MD:
+('Mathematics',)
+('Chemistry',)
+('Computer Science',)
 
 Студенти в Group B:
 ID студента: 1, Ім'я: Sarah Carroll
@@ -257,9 +255,9 @@ ID студента: 45, Ім'я: Patricia Mendoza
 Студент: Patricia Mendoza, Оцінка: 87
 Студент: Patricia Mendoza, Оцінка: 88
 
-Середній бал, який ставить Kari Christensen: 80.34414874225301
+Середній бал, який ставить Courtney Edwards MD: 80.46690518783542
 
-Курси, які відвідує Jeffrey Simmons:
+Курси, які відвідує Samantha Poole:
 ('Mathematics',)
 ('Physics',)
 ('Chemistry',)
@@ -269,9 +267,32 @@ ID студента: 45, Ім'я: Patricia Mendoza
 ('Geography',)
 ('Computer Science',)
 
-Курси, які веде Kari Christensen і відвідує Jeffrey Simmons:
+Курси, які веде викладач предмету Biology і відвідує студент Samantha Poole:
 ('Physics',)
 ('Biology',)
 ('History',)
 ('Literature',)
 ('Geography',)
+
+Середній бал, який Courtney Edwards MD ставить Samantha Poole: 81.28571428571429
+
+Оцінки студентів у групі 'Group B' з предмету 'Biology' на останньому занятті:
+Студент: Alex Hill, Оцінка: 66
+Студент: Angelica Lamb, Оцінка: 95
+Студент: Connor Kane, Оцінка: 100
+Студент: Darren Parker, Оцінка: 78
+Студент: Jessica Jones, Оцінка: 79
+Студент: Mary Suarez, Оцінка: 64
+Студент: Megan Allen, Оцінка: 78
+Студент: Melinda Stone, Оцінка: 79
+Студент: Michael Crawford, Оцінка: 86
+Студент: Patricia Mendoza, Оцінка: 71
+Студент: Ralph Fowler, Оцінка: 63
+Студент: Rebecca Murray, Оцінка: 61
+Студент: Richard Alvarado, Оцінка: 80
+Студент: Samantha Poole, Оцінка: 72
+Студент: Sandra Hopkins, Оцінка: 97
+Студент: Sandra Scott, Оцінка: 85
+Студент: Sarah Carroll, Оцінка: 62
+Студент: Sarah Walker, Оцінка: 83
+Студент: Travis Warner, Оцінка: 85
