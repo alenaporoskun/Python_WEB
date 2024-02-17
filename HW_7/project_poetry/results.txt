@@ -1,0 +1,277 @@
+Топ 5 студентів з найвищим середнім балом у всіх предметах:
+ID студента: 21, Ім'я: Jennifer Wilson
+ID студента: 19, Ім'я: Connor Kane
+ID студента: 16, Ім'я: Darren Parker
+ID студента: 7, Ім'я: Samantha Poole
+ID студента: 27, Ім'я: Amy Campbell
+
+Найкращий студент з Biology: Eric Smith
+
+Середній бал у групах з математики:
+Група: Group A, Середній бал: 79.8130081300813
+Група: Group B, Середній бал: 79.30516431924883
+Група: Group C, Середній бал: 81.21495327102804
+
+Загальний середній бал: 80.39072398190045
+
+Курси, які веде Kari Christensen:
+('Physics',)
+('Biology',)
+('History',)
+('Literature',)
+('Geography',)
+
+Студенти в Group B:
+ID студента: 1, Ім'я: Sarah Carroll
+ID студента: 7, Ім'я: Samantha Poole
+ID студента: 8, Ім'я: Richard Alvarado
+ID студента: 13, Ім'я: Megan Allen
+ID студента: 15, Ім'я: Ralph Fowler
+ID студента: 16, Ім'я: Darren Parker
+ID студента: 17, Ім'я: Melinda Stone
+ID студента: 18, Ім'я: Mary Suarez
+ID студента: 19, Ім'я: Connor Kane
+ID студента: 23, Ім'я: Alex Hill
+ID студента: 24, Ім'я: Angelica Lamb
+ID студента: 26, Ім'я: Sarah Walker
+ID студента: 28, Ім'я: Sandra Hopkins
+ID студента: 35, Ім'я: Travis Warner
+ID студента: 36, Ім'я: Rebecca Murray
+ID студента: 39, Ім'я: Sandra Scott
+ID студента: 43, Ім'я: Jessica Jones
+ID студента: 44, Ім'я: Michael Crawford
+ID студента: 45, Ім'я: Patricia Mendoza
+
+Оцінки студентів у Group B з Biology:
+Студент: Sarah Carroll, Оцінка: 98
+Студент: Sarah Carroll, Оцінка: 73
+Студент: Sarah Carroll, Оцінка: 96
+Студент: Sarah Carroll, Оцінка: 94
+Студент: Sarah Carroll, Оцінка: 62
+Студент: Sarah Carroll, Оцінка: 87
+Студент: Sarah Carroll, Оцінка: 92
+Студент: Sarah Carroll, Оцінка: 62
+Студент: Sarah Carroll, Оцінка: 68
+Студент: Sarah Carroll, Оцінка: 90
+Студент: Sarah Carroll, Оцінка: 66
+Студент: Sarah Carroll, Оцінка: 93
+Студент: Sarah Carroll, Оцінка: 65
+Студент: Sarah Carroll, Оцінка: 94
+Студент: Sarah Carroll, Оцінка: 79
+Студент: Sarah Carroll, Оцінка: 92
+Студент: Samantha Poole, Оцінка: 76
+Студент: Samantha Poole, Оцінка: 80
+Студент: Samantha Poole, Оцінка: 75
+Студент: Samantha Poole, Оцінка: 87
+Студент: Samantha Poole, Оцінка: 86
+Студент: Samantha Poole, Оцінка: 84
+Студент: Samantha Poole, Оцінка: 95
+Студент: Samantha Poole, Оцінка: 97
+Студент: Samantha Poole, Оцінка: 72
+Студент: Samantha Poole, Оцінка: 98
+Студент: Samantha Poole, Оцінка: 76
+Студент: Richard Alvarado, Оцінка: 72
+Студент: Richard Alvarado, Оцінка: 90
+Студент: Richard Alvarado, Оцінка: 65
+Студент: Richard Alvarado, Оцінка: 72
+Студент: Richard Alvarado, Оцінка: 80
+Студент: Richard Alvarado, Оцінка: 65
+Студент: Richard Alvarado, Оцінка: 81
+Студент: Richard Alvarado, Оцінка: 89
+Студент: Richard Alvarado, Оцінка: 74
+Студент: Richard Alvarado, Оцінка: 96
+Студент: Richard Alvarado, Оцінка: 67
+Студент: Richard Alvarado, Оцінка: 77
+Студент: Megan Allen, Оцінка: 90
+Студент: Megan Allen, Оцінка: 95
+Студент: Megan Allen, Оцінка: 74
+Студент: Megan Allen, Оцінка: 80
+Студент: Megan Allen, Оцінка: 69
+Студент: Megan Allen, Оцінка: 66
+Студент: Megan Allen, Оцінка: 78
+Студент: Megan Allen, Оцінка: 69
+Студент: Megan Allen, Оцінка: 95
+Студент: Megan Allen, Оцінка: 91
+Студент: Megan Allen, Оцінка: 90
+Студент: Megan Allen, Оцінка: 97
+Студент: Ralph Fowler, Оцінка: 97
+Студент: Ralph Fowler, Оцінка: 66
+Студент: Ralph Fowler, Оцінка: 94
+Студент: Ralph Fowler, Оцінка: 74
+Студент: Ralph Fowler, Оцінка: 70
+Студент: Ralph Fowler, Оцінка: 80
+Студент: Ralph Fowler, Оцінка: 94
+Студент: Ralph Fowler, Оцінка: 91
+Студент: Ralph Fowler, Оцінка: 76
+Студент: Ralph Fowler, Оцінка: 60
+Студент: Ralph Fowler, Оцінка: 95
+Студент: Ralph Fowler, Оцінка: 84
+Студент: Ralph Fowler, Оцінка: 76
+Студент: Ralph Fowler, Оцінка: 72
+Студент: Ralph Fowler, Оцінка: 63
+Студент: Ralph Fowler, Оцінка: 63
+Студент: Ralph Fowler, Оцінка: 64
+Студент: Ralph Fowler, Оцінка: 99
+Студент: Darren Parker, Оцінка: 74
+Студент: Darren Parker, Оцінка: 98
+Студент: Darren Parker, Оцінка: 78
+Студент: Darren Parker, Оцінка: 75
+Студент: Darren Parker, Оцінка: 60
+Студент: Darren Parker, Оцінка: 73
+Студент: Darren Parker, Оцінка: 78
+Студент: Melinda Stone, Оцінка: 69
+Студент: Melinda Stone, Оцінка: 64
+Студент: Melinda Stone, Оцінка: 78
+Студент: Melinda Stone, Оцінка: 63
+Студент: Melinda Stone, Оцінка: 99
+Студент: Melinda Stone, Оцінка: 99
+Студент: Melinda Stone, Оцінка: 79
+Студент: Mary Suarez, Оцінка: 69
+Студент: Mary Suarez, Оцінка: 73
+Студент: Mary Suarez, Оцінка: 76
+Студент: Mary Suarez, Оцінка: 89
+Студент: Mary Suarez, Оцінка: 76
+Студент: Mary Suarez, Оцінка: 100
+Студент: Mary Suarez, Оцінка: 64
+Студент: Connor Kane, Оцінка: 93
+Студент: Connor Kane, Оцінка: 74
+Студент: Connor Kane, Оцінка: 76
+Студент: Connor Kane, Оцінка: 100
+Студент: Connor Kane, Оцінка: 85
+Студент: Alex Hill, Оцінка: 99
+Студент: Alex Hill, Оцінка: 79
+Студент: Alex Hill, Оцінка: 65
+Студент: Alex Hill, Оцінка: 64
+Студент: Alex Hill, Оцінка: 96
+Студент: Alex Hill, Оцінка: 66
+Студент: Alex Hill, Оцінка: 79
+Студент: Alex Hill, Оцінка: 74
+Студент: Alex Hill, Оцінка: 78
+Студент: Alex Hill, Оцінка: 61
+Студент: Alex Hill, Оцінка: 93
+Студент: Alex Hill, Оцінка: 98
+Студент: Alex Hill, Оцінка: 64
+Студент: Alex Hill, Оцінка: 87
+Студент: Alex Hill, Оцінка: 86
+Студент: Alex Hill, Оцінка: 97
+Студент: Angelica Lamb, Оцінка: 70
+Студент: Angelica Lamb, Оцінка: 94
+Студент: Angelica Lamb, Оцінка: 90
+Студент: Angelica Lamb, Оцінка: 95
+Студент: Angelica Lamb, Оцінка: 64
+Студент: Angelica Lamb, Оцінка: 64
+Студент: Angelica Lamb, Оцінка: 68
+Студент: Sarah Walker, Оцінка: 72
+Студент: Sarah Walker, Оцінка: 64
+Студент: Sarah Walker, Оцінка: 79
+Студент: Sarah Walker, Оцінка: 79
+Студент: Sarah Walker, Оцінка: 77
+Студент: Sarah Walker, Оцінка: 83
+Студент: Sarah Walker, Оцінка: 72
+Студент: Sarah Walker, Оцінка: 89
+Студент: Sarah Walker, Оцінка: 88
+Студент: Sarah Walker, Оцінка: 95
+Студент: Sarah Walker, Оцінка: 87
+Студент: Sarah Walker, Оцінка: 88
+Студент: Sandra Hopkins, Оцінка: 63
+Студент: Sandra Hopkins, Оцінка: 73
+Студент: Sandra Hopkins, Оцінка: 75
+Студент: Sandra Hopkins, Оцінка: 71
+Студент: Sandra Hopkins, Оцінка: 74
+Студент: Sandra Hopkins, Оцінка: 87
+Студент: Sandra Hopkins, Оцінка: 88
+Студент: Sandra Hopkins, Оцінка: 78
+Студент: Sandra Hopkins, Оцінка: 60
+Студент: Sandra Hopkins, Оцінка: 99
+Студент: Sandra Hopkins, Оцінка: 62
+Студент: Sandra Hopkins, Оцінка: 97
+Студент: Travis Warner, Оцінка: 85
+Студент: Travis Warner, Оцінка: 73
+Студент: Travis Warner, Оцінка: 65
+Студент: Travis Warner, Оцінка: 84
+Студент: Travis Warner, Оцінка: 85
+Студент: Travis Warner, Оцінка: 66
+Студент: Travis Warner, Оцінка: 75
+Студент: Travis Warner, Оцінка: 85
+Студент: Travis Warner, Оцінка: 77
+Студент: Travis Warner, Оцінка: 71
+Студент: Travis Warner, Оцінка: 76
+Студент: Travis Warner, Оцінка: 91
+Студент: Travis Warner, Оцінка: 68
+Студент: Rebecca Murray, Оцінка: 86
+Студент: Rebecca Murray, Оцінка: 82
+Студент: Rebecca Murray, Оцінка: 61
+Студент: Rebecca Murray, Оцінка: 79
+Студент: Rebecca Murray, Оцінка: 85
+Студент: Rebecca Murray, Оцінка: 71
+Студент: Rebecca Murray, Оцінка: 82
+Студент: Sandra Scott, Оцінка: 65
+Студент: Sandra Scott, Оцінка: 72
+Студент: Sandra Scott, Оцінка: 86
+Студент: Sandra Scott, Оцінка: 97
+Студент: Sandra Scott, Оцінка: 81
+Студент: Sandra Scott, Оцінка: 66
+Студент: Sandra Scott, Оцінка: 83
+Студент: Sandra Scott, Оцінка: 88
+Студент: Sandra Scott, Оцінка: 62
+Студент: Sandra Scott, Оцінка: 98
+Студент: Sandra Scott, Оцінка: 91
+Студент: Sandra Scott, Оцінка: 66
+Студент: Sandra Scott, Оцінка: 96
+Студент: Sandra Scott, Оцінка: 68
+Студент: Sandra Scott, Оцінка: 85
+Студент: Sandra Scott, Оцінка: 65
+Студент: Sandra Scott, Оцінка: 97
+Студент: Jessica Jones, Оцінка: 67
+Студент: Jessica Jones, Оцінка: 69
+Студент: Jessica Jones, Оцінка: 84
+Студент: Jessica Jones, Оцінка: 77
+Студент: Jessica Jones, Оцінка: 82
+Студент: Jessica Jones, Оцінка: 92
+Студент: Jessica Jones, Оцінка: 70
+Студент: Jessica Jones, Оцінка: 73
+Студент: Jessica Jones, Оцінка: 78
+Студент: Jessica Jones, Оцінка: 79
+Студент: Jessica Jones, Оцінка: 60
+Студент: Jessica Jones, Оцінка: 76
+Студент: Jessica Jones, Оцінка: 85
+Студент: Jessica Jones, Оцінка: 66
+Студент: Jessica Jones, Оцінка: 90
+Студент: Jessica Jones, Оцінка: 63
+Студент: Jessica Jones, Оцінка: 71
+Студент: Jessica Jones, Оцінка: 67
+Студент: Michael Crawford, Оцінка: 86
+Студент: Michael Crawford, Оцінка: 78
+Студент: Michael Crawford, Оцінка: 87
+Студент: Michael Crawford, Оцінка: 92
+Студент: Michael Crawford, Оцінка: 81
+Студент: Michael Crawford, Оцінка: 73
+Студент: Michael Crawford, Оцінка: 94
+Студент: Michael Crawford, Оцінка: 90
+Студент: Michael Crawford, Оцінка: 60
+Студент: Michael Crawford, Оцінка: 69
+Студент: Michael Crawford, Оцінка: 65
+Студент: Patricia Mendoza, Оцінка: 71
+Студент: Patricia Mendoza, Оцінка: 70
+Студент: Patricia Mendoza, Оцінка: 69
+Студент: Patricia Mendoza, Оцінка: 87
+Студент: Patricia Mendoza, Оцінка: 88
+
+Середній бал, який ставить Kari Christensen: 80.34414874225301
+
+Курси, які відвідує Jeffrey Simmons:
+('Mathematics',)
+('Physics',)
+('Chemistry',)
+('Biology',)
+('History',)
+('Literature',)
+('Geography',)
+('Computer Science',)
+
+Курси, які веде Kari Christensen і відвідує Jeffrey Simmons:
+('Physics',)
+('Biology',)
+('History',)
+('Literature',)
+('Geography',)
