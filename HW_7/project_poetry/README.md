@@ -119,7 +119,7 @@ poetry run python seeds.py
 Далі створюємо файл з запитами ```my_select.py```.   
 Потім створюємо і виконуємо файл main.py з виведенням результатів виконання запитів у файл ```results.txt```:
 ```
-poetry run python main.py
+python main.py
 ```
 
 ## Результати
