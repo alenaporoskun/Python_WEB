@@ -71,7 +71,9 @@
 
 І замінити його на шлях до нашої БД. Ми будемо використовувати файл study.db в корені проекту.   
 
-```sqlalchemy.url = sqlite:///study.db```
+```
+sqlalchemy.url = sqlite:///study.db
+```
 
 Наступним кроком буде зміна файлу env.py. Тому що ми хочемо використовувати автогенерацію SQL скриптів в міграціях alembic — нам необхідно повідомити про це оточення у файлі env.py, який розташований у папці alembic.   
 ```alembic/env.py```  
@@ -98,8 +100,9 @@ target_metadata = Base.metadata
 ### Створення міграцій
 
 ```
-alembic revision --autogenerate -m 'Init
-'```
+alembic revision --autogenerate -m 'Init'
+```
+  
 ```
 alembic upgrade head
 ```
