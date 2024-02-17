@@ -56,12 +56,12 @@
   
 ### Створюємо віртуальне середовище зхавдяки poetry  
 
-```poetry new project_poetry```
-```cd project_poetry```
-```poetry shell```
-```poetry add faker```
-```poetry add alembic sqlalchemy```
-```alembic init alembic```
+```poetry new project_poetry```  
+```cd project_poetry```  
+```poetry shell```  
+```poetry add faker```  
+```poetry add alembic sqlalchemy```  
+```alembic init alembic```  
 
 ### Налаштування пакета alembic  
 
@@ -87,7 +87,9 @@ from models import Base
 ```
   
 Далі нам необхідно знайти рядок: ```target_metadata = None``` і замість None, вказати наші метадані:  
-```target_metadata = Base.metadata```
+```
+target_metadata = Base.metadata
+```
 
 ### Створення моделей
 
@@ -95,13 +97,19 @@ from models import Base
 
 ### Створення міграцій
 
-```alembic revision --autogenerate -m 'Init'```
-```alembic upgrade head```
+```
+alembic revision --autogenerate -m 'Init
+'```
+```
+alembic upgrade head
+```
 
 Створимо в корені проекту файл підключення до БД ```connect_db.py```.  
 
 Потім створюємо у корені проекту файл ```seeds.py``` щоб заповнити нашу базу даних. Виконаємо його:  
-```poetry run python seeds.py```  
+```
+poetry run python seeds.py
+```  
 Далі створюємо файл з запитами ```my_select.py```.   
 Потім створюємо і виконуємо файл main.py з виведенням результатів виконання запитів у файл ```results.txt```:
 ```
