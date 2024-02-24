@@ -2,8 +2,6 @@
 
 ## Завдання 1
 
-### Перша частина
-
 ### Вихідні дані
 
 У нас є json файл з авторами та їх властивостями: дата та місце народження, короткий опис біографії.    
@@ -125,5 +123,3 @@ PS C:\Users\Admin\Downloads\courses\GoIT\Python_for_Data_Science\Python_WEB\Proj
 “Try not to become a man of success. Rather become a man of value.”  
 Введіть команду: exit  
   
-  
-### Друга частина
