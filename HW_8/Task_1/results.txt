@@ -1,0 +1,27 @@
+PS C:\Users\Admin\Downloads\courses\GoIT\Python_for_Data_Science\Python_WEB\Projects\HW_8\Task_1> python main.py
+Введіть команду: name: Steve Martin  
+Цитати автора Steve Martin:
+- “A day without sunshine is like, you know, night.”
+Введіть команду: name: Albert Einstein
+Цитати автора Albert Einstein:
+- “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”
+- “There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”
+- “Try not to become a man of success. Rather become a man of value.”
+Введіть команду: name: David
+Автора 'David' не знайдено.
+Введіть команду: name:st
+Цитати автора Albert Einstein:
+- “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”
+- “There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”
+- “Try not to become a man of success. Rather become a man of value.”
+Цитати автора Steve Martin:
+- “A day without sunshine is like, you know, night.”
+Введіть команду: tag:miracle
+“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”
+Введіть команду: tag:success
+“Try not to become a man of success. Rather become a man of value.”
+Введіть команду: tag:li
+“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”
+Введіть команду: tag:suc
+“Try not to become a man of success. Rather become a man of value.”
+Введіть команду: exit
