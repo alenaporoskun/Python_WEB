@@ -86,7 +86,7 @@ DATABASES = {
 # Налаштування бази даних PostgreSQL
 DATABASES['postgres'] = {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'noteapp_db',  # Ваша назва бази даних PostgreSQL
+    'NAME': 'quotes_db',    # Ваша назва бази даних PostgreSQL
     'USER': 'postgres',     # Стандартне ім'я користувача PostgreSQL в контейнері за замовчуванням
     'PASSWORD': '567234',   # Ваш пароль PostgreSQL
     'HOST': 'localhost',    # Або можна використовувати ім'я контейнера як хост, якщо ви працюєте всередині Docker

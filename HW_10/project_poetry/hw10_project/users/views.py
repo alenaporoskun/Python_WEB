@@ -8,19 +8,19 @@ from django.contrib import messages
 from .forms import RegisterForm, LoginForm, ProfileForm
 from .models import Profile
 
-def signupuser(request):
+def signupuser2(request):
     if request.user.is_authenticated:
-        return redirect(to='noteapp:main')
+        return redirect(to='quotes:root')
 
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(to='noteapp:main')
+            return redirect(to='quotes:login')
         else:
-            return render(request, 'users/register.html', context={"form": form})
+            return render(request, 'users/signup.html', context={"form": form})
 
-    return render(request, 'users/register.html', context={"form": RegisterForm()})
+    return render(request, 'users/signup.html', context={"form": RegisterForm()})
 
 
 def loginuser(request):
@@ -34,7 +34,7 @@ def loginuser(request):
             return redirect(to='users:login')
 
         login(request, user)
-        return redirect(to='noteapp:main')
+        return redirect(to='quotes:root')
 
     return render(request, 'users/login.html', context={"form": LoginForm()})
 
@@ -42,7 +42,7 @@ def loginuser(request):
 @login_required
 def logoutuser(request):
     logout(request)
-    return redirect(to='noteapp:main')
+    return redirect(to='quotes:root')
 
 
 @login_required
@@ -60,7 +60,7 @@ def profile(request):
     profile_form = ProfileForm(instance=profile_instance)
     return render(request, 'users/profile.html', {'profile_form': profile_form})
 
-def register(request):
+def signupuser(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -70,4 +70,4 @@ def register(request):
             return redirect('login')  # Перенаправлення на сторінку входу
     else:
         form = UserCreationForm()
-    return render(request, 'users/register.html', {'form': form})
+    return render(request, 'users/signup.html', {'form': form})

@@ -7,6 +7,11 @@ class QuoteForm(forms.ModelForm):
         model = Quote
         fields = ['quote', 'author', 'tags']
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['author'].widget.attrs['size'] = 5  # Розмір вікна для вибору автора
+        self.fields['tags'].widget.attrs['size'] = 10  # Розмір вікна для вибору тега
+
     def clean(self):
         cleaned_data = super().clean()
         author_name = cleaned_data.get("author")

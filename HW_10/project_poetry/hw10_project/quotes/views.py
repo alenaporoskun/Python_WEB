@@ -26,7 +26,7 @@ def add_quote(request):
             quote.user = request.user
             # Збереження цитати в базі даних
             quote.save()
-            return redirect('home')  # Перенаправлення на головну сторінку після додавання цитати
+            return redirect('quotes:root')  # Перенаправлення на головну сторінку після додавання цитати
     else:
         form = QuoteForm()
-    return render(request, 'add_quote.html', {'form': form})
+    return render(request, 'quotes/add_quote.html', {'form': form})
