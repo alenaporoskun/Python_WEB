@@ -40,7 +40,8 @@
                 {% endif %}
                 {% if user.is_authenticated %}
                 <p>
-                    <a href="{% url 'add_quote' %}" class="btn btn-secondary">+ Add quote</a>
+                    <a href="{% url 'add_quote' %}" class="btn btn-outline-secondary">+ Add quote</a>
+                    <a href="{% url 'quotes:author_create' %}" class="btn btn-outline-secondary">+ Add author</a>
                 </p>
                 {% endif %}
             </div>

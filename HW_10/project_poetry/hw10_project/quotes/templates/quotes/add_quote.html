@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Quote</title>
-</head>
-<body>
-    <h1>Add Quote</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
-    </form>
-    {% if form.errors %}
-    <div>
-        <ul>
-            {% for field in form %}
-                {% for error in field.errors %}
-                    <li><strong>{{ field.label }}:</strong> {{ error }}</li>
-                {% endfor %}
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %}
-</body>
-</html>
+{% extends 'quotes/base.html' %}
+
+{% block content %}
+
+<h1 style="text-decoration: none">Add Quote</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+{% if form.errors %}
+<div>
+    <ul>
+        {% for field in form %}
+        {% for error in field.errors %}
+        <li><strong>{{ field.label }}:</strong> {{ error }}</li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+
+{% endblock %}

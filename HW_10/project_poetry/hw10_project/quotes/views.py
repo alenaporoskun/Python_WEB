@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.paginator import Paginator
 
-from .forms import QuoteForm
+from .forms import QuoteForm, AuthorForm
 from .models import Author, Quote
 
 # Create your views here.
@@ -46,3 +46,15 @@ def add_quote(request):
 def author_detail(request, fullname):
     author = get_object_or_404(Author, fullname=fullname)
     return render(request, 'quotes/author_detail.html', {'author': author})
+
+def author_create(request):
+    if request.method == 'POST':
+        form = AuthorForm(request.POST)
+        if form.is_valid():
+            form.save()
+            #return redirect('add_quote')  # Перенаправляємо на сторінку додавання цитати
+            return redirect('quotes:add_quote')
+    else:
+        form = AuthorForm()
+    return render(request, 'quotes/author_create.html', {'form': form})
+
