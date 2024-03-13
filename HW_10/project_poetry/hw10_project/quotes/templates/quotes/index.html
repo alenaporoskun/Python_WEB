@@ -26,24 +26,26 @@
         </div>
         {% endfor %}
         <nav>
-            <ul class="pager">
-
-                <li class="previous">
-                    <a class="{% if not quotes.has_previous %} disabled {% endif %}"
-                    href="{% if quotes.has_previous %} {% url 'quotes:root_paginate' quotes.previous_page_number %} {% else %} # {% endif %}">
-                        <span aria-hidden="true">←</span> Previous
-                    </a>
+            <ul class="pagination justify-content-center">
+                {% if quotes.has_previous %}
+                <li class="page-item">
+                    <a class="page-link"
+                       href="{% url 'quotes:root_paginate' quotes.previous_page_number %}">Previous</a>
                 </li>
-
-                
-                <li class="next">
-                    <a class="{% if not quotes.has_next %} disabled {% endif %}"
-                    href="{% if quotes.has_next %} {% url 'quotes:root_paginate' quotes.next_page_number %} {% else %} # {% endif %}">
-                    Next <span aria-hidden="true">→</span></a>
+                {% endif %}
+        
+                {% for page_num in paginator.page_range %}
+                <li class="page-item {% if page_num == quotes.number %}active{% endif %}">
+                    <a class="page-link" href="{% url 'quotes:root_paginate' page_num %}">{{ page_num }}</a>
                 </li>
-
+                {% endfor %}
+        
+                {% if quotes.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'quotes:root_paginate' quotes.next_page_number %}">Next</a>
+                </li>
+                {% endif %}
             </ul>
-
         </nav>
     </div>
 </div>
