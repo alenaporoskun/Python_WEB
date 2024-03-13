@@ -31,16 +31,16 @@
 ![qoutes_without_authorization](project_poetry/hw10_project/result/qoutes_without_authorization.jpg)  
 
 Головна сторінка сайту з цитатами з авторизацією:  
-![Опис](HW_10/project_poetry/hw10_project/result/quotes_with_authorization.jpg)  
+![Опис](project_poetry/hw10_project/result/quotes_with_authorization.jpg)  
 
 Сторінка для додавання нового автора:   
-![create_new_author](HW_10/project_poetry/hw10_project/result/create_new_author.jpg)  
+![create_new_author](project_poetry/hw10_project/result/create_new_author.jpg)  
 
 Сторінка для додавання нової цитати:  
-![add_quote](HW_10/project_poetry/hw10_project/result/add_quote.jpg)  
+![add_quote](project_poetry/hw10_project/result/add_quote.jpg)  
 
 Останні цитати з новим автором:  
-![quotes_end](HW_10/project_poetry/hw10_project/result/quotes_end.jpg)  
+![quotes_end](project_poetry/hw10_project/result/quotes_end.jpg)  
 
 
 
