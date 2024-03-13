@@ -23,9 +23,7 @@
 ```cd hw10_project```  
 ```py .\manage.py runserver```  
 
-## Результат 
-
-Результат:    
+## Результат   
   
 Головна сторінка сайту з цитатами без авторизації:  
 ![qoutes_without_authorization](project_poetry/hw10_project/result/qoutes_without_authorization.jpg)  
