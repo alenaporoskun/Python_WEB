@@ -28,7 +28,7 @@
 Результат:    
   
 Головна сторінка сайту з цитатами без авторизації:  
-![qoutes_without_authorization](project_poetry/hw10_project/resultqoutes_without_authorization.jpg)  
+![qoutes_without_authorization](project_poetry/hw10_project/result/qoutes_without_authorization.jpg)  
 
 Головна сторінка сайту з цитатами з авторизацією:  
 ![Опис](HW_10/project_poetry/hw10_project/result/quotes_with_authorization.jpg)  
