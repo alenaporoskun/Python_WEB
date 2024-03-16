@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "contact-api"
+version = "0.1.0"
+description = ""
+authors = ["Olena Poroskun <alenka200124@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.28.0"}
+sqlalchemy = "^2.0.28"
+psycopg2 = "^2.9.9"
+python-multipart = "^0.0.9"
+crud = "^0.1"
+pydantic = {extras = ["email"], version = "^2.6.4"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
