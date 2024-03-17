@@ -14,6 +14,7 @@ psycopg2 = "^2.9.9"
 python-multipart = "^0.0.9"
 crud = "^0.1"
 pydantic = {extras = ["email"], version = "^2.6.4"}
+alembic = "^1.13.1"
 
 
 [build-system]

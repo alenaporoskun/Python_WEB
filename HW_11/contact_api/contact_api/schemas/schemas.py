@@ -17,4 +17,5 @@ class Contact(ContactBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
+        #orm_mode = True
