@@ -97,4 +97,6 @@ docker run --name db-postgres -p 5432:5432 -e POSTGRES_PASSWORD=567234 -d postgr
 
 ## Результат   
 
+[Swagger документація RESTful API:](http://127.0.0.1:8000/docs)  
+  
 ![res](contact_api/contact_api/result/res.jpg)
