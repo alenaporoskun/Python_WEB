@@ -5,8 +5,8 @@ from typing import List
 from database.database import engine, get_db
 from schemas.schemas import ContactCreate, Contact
 from crud import create_contact, get_contacts, get_contact, update_contact, delete_contact
+from models.models import Base  
 
-from models.models import Base
 app = FastAPI()
 
 # Ініціалізація бази даних
