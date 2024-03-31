@@ -48,14 +48,18 @@ def remove_contact(db: Session, contact_id: int, user: User):
     db.commit()
     return db_contact
 
-
 def get_upcoming_birthdays(db: Session, user: User):
-    today = datetime.now()
+    today = datetime.now().date()
     end_date = today + timedelta(days=7)
     return db.query(Contact).filter(
-        func.extract('month', Contact.birthday) == end_date.month,
+        func.extract('month', Contact.birthday) == today.month,
         func.extract('day', Contact.birthday) >= today.day,
-        func.extract('day', Contact.birthday) <= (end_date).day, 
+    ).union(
+        db.query(Contact).filter(
+            func.extract('month', Contact.birthday) == end_date.month,
+            func.extract('day', Contact.birthday) <= end_date.day,
+        )
+    ).filter(
         Contact.user_id == user.id
     ).all()
 
