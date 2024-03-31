@@ -90,6 +90,7 @@ Response body
 username -> alenka@gmail.com  
 password -> Alenka2004  
 client_id -> 2 (з Response body "user" -> "id")  
+client_secret -> secret (будь-який рядок)
   
 Далі авторизуємося з цими даними і все можемо виконувати різні операції з контактами.  
    
