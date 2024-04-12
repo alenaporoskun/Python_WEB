@@ -12,20 +12,14 @@ from database.database import get_db
 from repository import users as repository_users
 
 import redis, pickle
-from conf.config import settings
+from conf.config1 import settings
 
 class Auth:
     pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
     SECRET_KEY = settings.secret_key
     ALGORITHM = settings.algorithm
-    oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
+    oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")  # /api/auth/login
     r = redis.Redis(host=settings.redis_host, port=settings.redis_port, db=0)
-
-# class Auth:
-#     pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-#     SECRET_KEY = "secret_key"
-#     ALGORITHM = "HS256"
-#     oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login") # /api/auth/login
 
     def verify_password(self, plain_password, hashed_password):
         return self.pwd_context.verify(plain_password, hashed_password)
@@ -64,30 +58,6 @@ class Auth:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Invalid scope for token')
         except JWTError:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Could not validate credentials')
-
-    # async def get_current_user(self, token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
-    #     credentials_exception = HTTPException(
-    #         status_code=status.HTTP_401_UNAUTHORIZED,
-    #         detail="Could not validate credentials",
-    #         headers={"WWW-Authenticate": "Bearer"},
-    #     )
-
-    #     try:
-    #         # Decode JWT
-    #         payload = jwt.decode(token, self.SECRET_KEY, algorithms=[self.ALGORITHM])
-    #         if payload['scope'] == 'access_token':
-    #             email = payload["sub"]
-    #             if email is None:
-    #                 raise credentials_exception
-    #         else:
-    #             raise credentials_exception
-    #     except JWTError as e:
-    #         raise credentials_exception
-
-    #     user = await repository_users.get_user_by_email(email, db)
-    #     if user is None:
-    #         raise credentials_exception
-    #     return user
 
     async def get_current_user(self, token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
         credentials_exception = HTTPException(

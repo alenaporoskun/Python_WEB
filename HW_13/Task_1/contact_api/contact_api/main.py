@@ -19,7 +19,7 @@ from models.models import Base, User
 from fastapi import APIRouter, Security, BackgroundTasks, Request
 from services.email import send_email
 import redis.asyncio as redis
-from conf.config import settings
+from conf.config1 import settings
 
 from fastapi_limiter import FastAPILimiter
 from fastapi_limiter.depends import RateLimiter
@@ -40,15 +40,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+security = HTTPBearer()
+
 # Ініціалізація бази даних
 Base.metadata.create_all(bind=engine)
 
-
-# @app.on_event("startup")
-# async def startup():
-#     r = await redis.Redis(host=settings.redis_host, port=settings.redis_port, db=0, encoding="utf-8",
-#                           decode_responses=True)
-#     await FastAPILimiter.init(r)
 
 async def startup_event():
     r = await redis.Redis(host=settings.redis_host, port=settings.redis_port, db=0, encoding="utf-8",
@@ -59,12 +55,6 @@ app.add_event_handler("startup", startup_event)
 
 
 # Create contact
-
-# @app.post("/contacts/", response_model=Contact, status_code=status.HTTP_201_CREATED)
-# def create_contact(contact: ContactCreate, db: Session = Depends(get_db),
-#                    current_user: User = Depends(auth_service.get_current_user)):
-#     return add_contact(db=db, contact=contact, user=current_user)
-
 # Оновлена функція створення контакту з обмеженням швидкості
 @app.post("/contacts/", response_model=Contact, status_code=status.HTTP_201_CREATED,
           dependencies=[Depends(RateLimiter(times=10, seconds=60))])
@@ -74,16 +64,7 @@ def create_contact(
 ):
     return add_contact(db=db, contact=contact, user=current_user)
 
-
 # Read contacts
-
-# @app.get("/contacts/", response_model=List[Contact])
-# def read_contacts(
-#     skip: int = 0, limit: int = 10, query: str = None, db: Session = Depends(get_db),
-#     current_user: User = Depends(auth_service.get_current_user)
-# ):
-#     return get_contacts(db=db, skip=skip, limit=limit, query=query, user=current_user)
-
 @app.get("/contacts/", response_model=List[Contact], description='No more than 10 requests per minute',
             dependencies=[Depends(RateLimiter(times=10, seconds=60))])
 def read_contacts(
@@ -91,7 +72,6 @@ def read_contacts(
     current_user: User = Depends(auth_service.get_current_user)
 ):
     return get_contacts(db=db, skip=skip, limit=limit, query=query, user=current_user)
-
 
 # Read contact by ID
 @app.get("/contacts/{contact_id}", response_model=Contact)
@@ -125,9 +105,6 @@ def delete_contact(contact_id: int, db: Session = Depends(get_db),
 def get_upcoming_birthdays_list(db: Session = Depends(get_db),
                                 current_user: User = Depends(auth_service.get_current_user)):
     return get_upcoming_birthdays(db=db, user=current_user)
-
-
-security = HTTPBearer()
 
 
 @app.post("/signup", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
@@ -218,8 +195,8 @@ async def update_avatar_user(file: UploadFile = File(), current_user: User = Dep
         secure=True
     )
 
-    r = cloudinary.uploader.upload(file.file, public_id=f'NotesApp/{current_user.username}', overwrite=True)
-    src_url = cloudinary.CloudinaryImage(f'NotesApp/{current_user.username}')\
+    r = cloudinary.uploader.upload(file.file, public_id=f'{current_user.username}', overwrite=True)
+    src_url = cloudinary.CloudinaryImage(f'{current_user.username}')\
                         .build_url(width=250, height=250, crop='fill', version=r.get('version'))
     user = await repository_users.update_avatar(current_user.email, src_url, db)
     return user
