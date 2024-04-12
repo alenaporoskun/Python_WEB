@@ -48,23 +48,23 @@ docker-compose up -d
 
 Відповідь сервера:  
   
-Code	Details  
+Code	Details   
 201	  
 Response body 
-{
-  "user": {
-    "id": 1,
-    "username": "elen_de12",
-    "email": "rojifi7309@etopys.com",
-    "created_at": "2024-04-12T09:13:11.418020",
-    "avatar": "https://www.gravatar.com/avatar/46fdce281fe6f8d680b783e6c96659ba"
-  },
-  "detail": "User successfully created. Check your email for confirmation."
-}
+{  
+  "user": {  
+    "id": 1,  
+    "username": "elen_de12",  
+    "email": "rojifi7309@etopys.com",  
+    "created_at": "2024-04-12T09:13:11.418020",  
+    "avatar": "https://www.gravatar.com/avatar/46fdce281fe6f8d680b783e6c96659ba"  
+  },  
+  "detail": "User successfully created. Check your email for confirmation."  
+}  
   
 При реєстрації користувача, йому на пошту надсилається лист для підтвердження пошти. При переході за посиланням ми отримаємо сторінку з таким вмістом:  
 ```
-{  
+{   
   "detail": "Not authenticated"  
 }  
 ```
@@ -80,8 +80,8 @@ Response body
 Далі в розділі ```POST /login``` можна залогінітися:  
   
 username -> rojifi7309@etopys.com  
-password -> Alenka2001 
-client_id -> 1 (з Response body "user" -> "id") 
+password -> Alenka2001   
+client_id -> 1 (з Response body "user" -> "id")   
   
 Далі авторизуємося з цими даними і все можемо виконувати різні операції з контактами.  
    
