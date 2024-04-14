@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi import APIRouter, status, Security, UploadFile, File
+from fastapi import BackgroundTasks, Request
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from fastapi import APIRouter, Security, BackgroundTasks, Request
 from fastapi_limiter import FastAPILimiter
 from fastapi_limiter.depends import RateLimiter
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,8 +13,8 @@ from typing import List
 from database.database import engine, get_db
 from schemas.schemas import ContactCreate, Contact, UserDb
 from schemas.schemas import UserModel, UserResponse, TokenModel, RequestEmail
-from crud import add_contact, get_contacts, get_contact, refresh_contact
-from crud import remove_contact, get_upcoming_birthdays
+from crud import add_contact, get_contacts, get_contact, refresh_contact # comment during testing/work on documentation
+from crud import remove_contact, get_upcoming_birthdays                  # comment during testing/work on documentation
 from repository import users as repository_users
 from services.auth import auth_service
 from models.models import Base, User
