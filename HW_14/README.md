@@ -30,7 +30,7 @@ docker-compose up -d
 
 ## Результат   
   
-Документація створена за допомогою Sphinx:  
+Документація створена за допомогою Sphinx [index.html](contact_api\contact_api\docs\_build\html\index.html):
 ![res_docs](contact_api/contact_api/result/res_docs.jpg)
   
 Результат виконання тестів за допомогою фреймворку Unittest:  
