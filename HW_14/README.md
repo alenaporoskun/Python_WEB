@@ -31,7 +31,7 @@ docker-compose up -d
 ## Результат   
   
 Документація створена за допомогою Sphinx:  
-![res](contact_api/contact_api/result/res.jpg)
+![res_docs](contact_api/contact_api/result/res_docs.jpg)
   
 Результат виконання тестів за допомогою фреймворку Unittest:  
 ![res_test1](contact_api/contact_api/result/res_test1.jpg)
