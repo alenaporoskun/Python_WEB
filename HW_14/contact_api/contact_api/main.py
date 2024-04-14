@@ -13,8 +13,8 @@ from typing import List
 from database.database import engine, get_db
 from schemas.schemas import ContactCreate, Contact, UserDb
 from schemas.schemas import UserModel, UserResponse, TokenModel, RequestEmail
-#from crud import add_contact, get_contacts, get_contact, refresh_contact
-#from crud import remove_contact, get_upcoming_birthdays
+from crud import add_contact, get_contacts, get_contact, refresh_contact
+from crud import remove_contact, get_upcoming_birthdays
 from repository import users as repository_users
 from services.auth import auth_service
 from models.models import Base, User
